@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 
-function Modal() {
+function ModalView() {
     return (
       <>
         <h3>안녕하세요</h3>
@@ -22,4 +22,4 @@ function Modal() {
   }
 
   
-export default Modal;
+export default ModalView;

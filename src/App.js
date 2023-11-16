@@ -1,13 +1,36 @@
+import { useState } from 'react';
 import './App.css';
+import { vData } from './data.js'
+import { Button, Container, Row, Col, Navbar, Nav, NavDropdown, Card, Offcanvas } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar.jsx';
+import VisualView from './components/home/Visual.jsx';
+import GalleryList from './components/home/GalleryList.jsx';
+import Content from './components/home/Content.jsx';
+import Banner from './components/Banner.jsx';
+import Footer from './components/Footer.jsx';
 
-import Modal from './components/ModalView.jsx';
 function App() {
+
+
+ 
+
   return (
-    <div className="App">
-      <Modal/>
+
+    <div className='App'>
+      <NavBar/>
+      
+      <VisualView/>
+
+      <GalleryList/>
+
+      <Content/>
+      <Banner/>
+      <Footer/>
     </div>
-  );
+  )
 }
+
 
 
 

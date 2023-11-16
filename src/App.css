@@ -1,9 +1,12 @@
-*{
-  margin: 0; padding: 0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-li{list-style: none;}
+li {
+  list-style: none;
+}
 
 .flex {
   display: flex;
@@ -12,20 +15,24 @@ li{list-style: none;}
   padding: 0 10px;
 }
 
-.modal{
-  position:fixed;
+.modal {
+  position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #fff;
   padding: 20px;
   border-radius: 10px;
   width: 300px;
   height: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.myP{
+.myP {
   color: #f00;
   background-color: skyblue;
 }
@@ -51,4 +58,120 @@ li{list-style: none;}
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.tab>ul {
+  display: flex;
+}
+
+.tab>ul>li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px 5px 0;
+  border: 1px solid #000;
+}
+
+.tab>ui>li:last-child {
+  border-right: 1px solid #000;
+}
+
+.tab>ul>li.active {
+  background: skyblue;
+  border-bottom: 0;
+}
+
+.lists>li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.lists>li:hover {
+  background: skyblue;
+}
+
+.btnWrap {
+  display: flex;
+  justify-content: end;
+}
+
+.btnWrap button {
+  padding: 5px 15px;
+}
+
+.num {
+  background-color: skyblue;
+  display: inline-block;
+  padding: 10px;
+}
+
+.avata {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avata img {
+  width: 100%;
+}
+
+.visualWrap {
+  background: gray;
+}
+
+.contentWrap01 {
+  background: papayawhip;
+}
+
+.dot {
+  position: relative;
+}
+
+
+.dot::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: red;
+  margin: 10px auto;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-700%);
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner{
+  height: 400px;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  background: skyblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  position: absolute;
+}
+
+.banWrap {
+  background-image: url(./assets/img/bannerBg01.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
